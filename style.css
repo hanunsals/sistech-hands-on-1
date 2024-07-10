@@ -1,0 +1,377 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* dashboard */
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  .dashboard-content {
+    background-color: #417ECC; 
+    color: #fff; 
+    padding: 15px 20px; 
+    margin-top: 30px; 
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px; 
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #05cf05;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #315E99;
+  }
+  
+  .sidebar:hover {
+    width: 240px; 
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .sidebar {
+      width: 80px; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 60px;
+    }
+  }
+  
+  .logo {
+    height: auto; 
+    padding: 16px;
+    color: white;
+    display: flex; 
+    align-items: center;
+    margin-left: -10px;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto; 
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5 ease-in-out;
+  }
+  
+  .menu li:hover , .active{
+    background: #e0e0e058;
+  }
+  
+  .menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .menu a span {
+    overflow: hidden;
+  }
+  
+  .menu a i {
+    font-size: 1.2rem;
+  }
+  
+  .main-content {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-color: #417ECC;
+  }
+  
+  .header-wrapper img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1px;
+    background-color: #417ECC;
+  }
+  
+  .header-title {
+    color: #ffffff;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-box {
+    background: rgba(255, 255, 255, 0.933);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 20px;
+    flex: 1;
+    margin: 0 auto;
+  }
+  
+  .search-box input {
+    background: transparent;
+    padding: 10px;
+  }
+  
+  .search-box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: #315E99;
+  }
+  
+  .search-box i:hover {
+    transform: scale(1.3);
+  }
+  
+  .notification-button, 
+  .profile-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  
+  .notification-button i {
+    font-size: 24px;
+    color: #ffffff; 
+  }
+  
+  .profile-button i {
+    font-size: 24px;
+    color: #ffffff; 
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F3F4F6;
+    margin: 10px -16px -16px;
+    overflow: auto;
+    padding-left: 20px;
+    min-height: 70vh; 
+  }
+  
+  .center-content img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .center-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .center-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+ 
+  .notification {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4069E5;
+    top: 200px;
+    left: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .notification p {
+    flex: 1;
+    align-items: center;
+    color: white; 
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .notification button {
+    background-color: #EBFDFF;
+    color: #00BDD6;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .complete {
+    background-color: #4069E5 !important;
+  }
+  
+  .card {
+    width: calc(25% - 20px); 
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:nth-child(4n) {
+    margin-right: 0; 
+  }
+  
+  .card img {
+    margin: 0;
+    width: 70%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-list-container {
+    max-height: 80%;
+    padding: 20px;
+    
+  }
+  
+  .card-container {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .card-container p {
+    color: #9095A0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  .card-container h3 {
+    color: #323842;
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  
+  .card-container p:nth-child(3) {
+    color: #323842;
+    margin-bottom: 5px;
+  }
+  
+  .card-container p:nth-child(4) {
+    color: #323842;
+    margin-bottom: 10px;
+  }
+  
+  .card-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .applicants-button {
+    background-color: #fff;
+    color: #315E99;
+    padding: 4px 8px;
+    border: 1px solid #315E99;
+    border-radius: 5px;
+    margin-left: auto;
+  }
+  
+  .detail-button {
+    background-color: #315E99;
+    color: #fff;
+    padding: 4px 18px;
+    border: 1px solid #315E99;
+    border-radius: 5px;
+  }
+  
+  .applicants-button:hover {
+    background-color: #315E99;
+    color: #fff;
+  }
+  
+  .detail-button:hover {
+    background-color: #29476e;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 100%; 
+      margin: 0 auto 20px; 
+      float: none;
+    }
+  
+    .card img {
+      border-radius: 5px; 
+    }
+  
+    .card-container {
+      padding: 10px; 
+      margin-left: 0; 
+    }
+    
+    .applicants-button,
+    .detail-button {
+      width: 100%; 
+      margin: 5px 0; 
+    }
+  
+    .card-details {
+      display: none; 
+    }
+  }
+  
+  .blur {
+    filter: blur(2px);
+    transition: filter 0.3s;
+  }

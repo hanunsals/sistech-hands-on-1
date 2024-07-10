@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guys!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <ul class="menu">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="logo">
+                </div>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span>Subscription</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="header-wrapper">
+            <div class="header-title">
+                <h2>Hi, Hanun!</h2>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search Course...">
+                </div>
+                <div class="notification-button">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <button class="profile-button">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </header>
+    
+        <section class="dashboard-content">
+            <h2>Learn With Effectively With Us!</h2>
+        </section>
+        
+        <section class="center-content">
+            <div class="card-list-container">
+                <article class="card" onmouseover="blurCard(this)" onmouseout="unblurCard(this)">
+                    <div class="image-container" onmouseover="blurImage(this)" onmouseout="unblurImage(this)">
+                        <img src="assets/figma.jpg" alt="Course Image">
+                    </div>
+                    <div class="card-container">
+                        <p><b>DESIGN</b></p>
+                        <h3><b>Learn Figma</b></h3>
+                        <p><i class="fa-regular fa-clock"></i> 6h 30min </p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Rp. 1.000,000,- </p>
+                        <div class="card-button">
+                            <button class="detail-button" onclick="openPopupDetail()">View Course</button>
+                            <button class="applicants-button" onclick="openPopupApplicants()">Buy Course</button>
+                        </div>  
+                    </div>
+                </article>
+
+                <article class="card" onmouseover="blurCard(this)" onmouseout="unblurCard(this)">
+                    <div class="image-container" onmouseover="blurImage(this)" onmouseout="unblurImage(this)">
+                        <img src="assets/ig.jpg" alt="Course Image">
+                    </div>
+                    <div class="card-container">
+                        <p><b>SOCIAL MEDIA</b></p>
+                        <h3><b>Master Instagram</b></h3>
+                        <p><i class="fa-regular fa-clock"></i> 5h 15min </p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Free </p>
+                        <div class="card-button">
+                            <button class="detail-button" onclick="openPopupDetail()">View Course</button>
+                            <button class="applicants-button" onclick="openPopupApplicants()">Buy Course</button>
+                        </div>  
+                    </div>
+                </article>
+
+                <article class="card" onmouseover="blurCard(this)" onmouseout="unblurCard(this)">
+                    <div class="image-container" onmouseover="blurImage(this)" onmouseout="unblurImage(this)">
+                        <img src="assets/analog.png" alt="Course Image">
+                    </div>
+                    <div class="card-container">
+                        <p><b>PHOTOGRAPHY</b></p>
+                        <h3><b>Analog Photography</b></h3>
+                        <p><i class="fa-regular fa-clock"></i> 3h 40min </p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Free </p>
+                        <div class="card-button">
+                            <button class="detail-button" onclick="openPopupDetail()">View Course</button>
+                            <button class="applicants-button" onclick="openPopupApplicants()">Buy Course</button>
+                        </div>  
+                    </div>
+                </article>
+
+                <article class="card" onmouseover="blurCard(this)" onmouseout="unblurCard(this)">
+                    <div class="image-container" onmouseover="blurImage(this)" onmouseout="unblurImage(this)">
+                        <img src="assets/ps.jpg" alt="Course Image">
+                    </div>
+                    <div class="card-container">
+                        <p><b>PHOTOGRAPHY</b></p>
+                        <h3><b>Photoshop - Essence</b></h3>
+                        <p><i class="fa-regular fa-clock"></i> 6h 45min </p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Rp. 1.000,000,- </p>
+                        <div class="card-button">
+                            <button class="detail-button" onclick="openPopupDetail()">View Course</button>
+                            <button class="applicants-button" onclick="openPopupApplicants()">Buy Course</button>
+                        </div>  
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
